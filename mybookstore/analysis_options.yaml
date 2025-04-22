@@ -1,0 +1,66 @@
+include: package:flutter_lints/flutter.yaml
+
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+  errors:
+    avoid_dynamic_calls: ignore
+    avoid_print: error
+    use_build_context_synchronously: ignore
+linter:
+  rules:
+    member-ordering:
+      - public-method
+      - private-method
+    # Configurações básicas recomendadas
+    missing_metadata_for_key: false
+    prefer_const_constructors: true # Prefere construtores const para widgets imutáveis.
+    prefer_final_locals: true # Prefere o uso de variáveis locais final para maior segurança.
+    prefer_single_quotes: true # Prefere aspas simples para strings, mantendo o padrão.
+    avoid_unused_constructor_parameters: true # Evita parâmetros de construtores não utilizados.
+    annotate_overrides: true # Exige a anotação @override em métodos sobrescritos.
+    always_declare_return_types: true # Garante que todos os métodos tenham o tipo de retorno declarado.
+    package_api_docs: true # Garante que todos os métodos tenham o tipo de retorno declarado.
+    sort_pub_dependencies: 
+    curly_braces_in_flow_control_structures: true
+
+
+    # Organização e limpeza de código
+    require_trailing_commas: true
+    lines_longer_than_100_chars: true
+    sort_constructors_first: true # Garante que construtores venham antes de outros métodos.
+    use_key_in_widget_constructors: true # Garante que todos os widgets tenham um `Key` no construtor.
+    prefer_const_literals_to_create_immutables: true # Usa const para listas e mapas imutáveis.
+    avoid_returning_null_for_void: true # Evita retornar null em funções void, o que pode gerar inconsistências.
+    await_only_futures: true # Garante que apenas `Future` é usado com `await`.
+    prefer_typing_uninitialized_variables: true # Garante que todas as variáveis são inicializadas.
+    prefer_interpolation_to_compose_strings: true # Prefere interpolar strings em vez de concatenar.
+    newline_before_return: true # Exige que as funções retornem uma nova linha antes de retornar.
+
+    # Melhorias de estilo
+    always_put_control_body_on_new_line: true # Exige que o corpo de um bloco de controle seja colocado em uma nova linha.
+    always_use_package_imports: true # Garante que todas as importações de pacotes sejam usadas.
+
+    # Melhorias de performance
+    prefer_final_fields: true # Prefere campos final para classes, ajudando na imutabilidade.
+    unnecessary_getters_setters: true # Evita getters e setters desnecessários.
+    avoid_returning_dynamic: true # Evita retornar tipos dinâmicos.
+
+    # Configurações específicas para Flutter
+    avoid_redundant_argument_values: true # Evita argumentos redundantes (e.g., `padding: EdgeInsets.all(8)`).
+    avoid_unnecessary_containers: true # Evita containers desnecessários, melhorando a performance.
+    sized_box_for_whitespace: true # Usa `SizedBox` para espaçamentos em vez de `Container`.
+    use_named_constants: true # Recomenda o uso de constantes nomeadas.
+
+    # Segurança e consistência
+    always_put_required_named_parameters_first: true # Garante que parâmetros `required` venham primeiro.
+    prefer_is_not_empty: true # Prefere o uso de `.isNotEmpty` em vez de `!isEmpty`, para maior legibilidade.
+    # use_build_context_synchronously: true # Evita o uso de context async de forma insegura.
+    avoid_dynamic_calls: true # Evita chamadas dinâmicas, promovendo mais segurança de tipo.
+
+    # Configurações opcionais para organização de imports e consistência
+    directives_ordering: true # Ordena os imports de forma consistente.
+    avoid_relative_lib_imports: true # Prefere importações absolutas, ajudando na organização do projeto.
+    type_annotate_public_apis: true # Garante anotações de tipo em APIs públicas.

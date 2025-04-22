@@ -1,0 +1,8 @@
+# Flutter Version Manager
+.fvm
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/

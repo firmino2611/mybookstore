@@ -1,0 +1,27 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "MyBookStore (PROD)",
+            "request": "launch",
+            "type": "dart",
+            "program": "mybookstore/lib/main.dart",
+            "flutterMode": "debug",
+            "toolArgs": [
+                "--dart-define-from-file=envs/.env.prod.json"
+            ]
+        },
+        {
+            "name": "MyBookStore (HOMOLOG)",
+            "request": "launch",
+            "type": "dart",
+            "program": "mybookstore/lib/main.dart",
+            "toolArgs": [
+                "--dart-define-from-file=envs/.env.homolog.json"
+            ]
+        },
+    ]
+}

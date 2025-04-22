@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "439934674216",
+    "project_id": "fiesc-my-book-store",
+    "storage_bucket": "fiesc-my-book-store.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439934674216:android:bcc870b03b78104e0d1c1d",
+        "android_client_info": {
+          "package_name": "com.example.mybookstore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXAKysyAT15sZlGQ5qLj_QtaBROjEuIm0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
