@@ -27,13 +27,6 @@ Para concluir a etapa prática, você precisará criar o app chamado "**MyBookSt
 - Firebase Analytics:
   - Deve ser criado um projeto no firebase gratuito para integração com o analytics.
   - O link de acesso ao firebase deve ser informado aqui abaixo no README.md.
-  - Deve ser compartilhado o acesso como Editor para os seguintes emails:
-    - bruno.souza@sc.senai.br
-    - julio.bitencourt@sc.senai.br
-    - rafael.spagnol@sc.senai.br
-    - bruno.p@sc.senai.br
-    - rodrigo.cm@sc.senai.br
-    - henrique.longuinho@sc.senai.br
 
 Link projeto firebase: [Projeto Firebase](https://console.firebase.google.com/u/0/project/fiesc-my-book-store/analytics/app/android:com.example.mybookstore/events/events~2Fhub%3Ffpn%3D439934674216?hl=pt)
 
